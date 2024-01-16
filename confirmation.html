@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css">
+    <script src="confirmation.js"></script>
+</head>
+
+<body>
+    <a href="#" id="modifyBookingBtn" class="btn btn-secondary" onclick="history.back()">← Modify Booking</a>
+    <div class="confirmation-container">
+        <div class="confirmation-details">
+            <div>
+                <img id="placeImage" alt="Place Image" style="max-width: 100%;">
+            </div>
+            <div class="details-info">
+                <p id="locationName"></p>
+                <p id="location"></p>
+                <p id="rating"></p>
+                <p id="bookedDates"></p>
+                <hr>
+                <p id="numOfPeople"></p>
+                <p id="roomPrice"></p>
+                <h3>Price details</h3>
+                <p id="gstAmount"></p>
+                <p id="discountAmount"></p>
+                <p id="totalPrice"></p>
+            </div>
+        </div>
+
+        <div class="user-info-form">
+            <h2>Enter Your Information</h2>
+            <hr>
+            <p>We will use these details to confirm your booking</p>
+
+            <div class="form-group user-info-input">
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" class="form-control" id="fullName" placeholder="FirstName LastName" required>
+            </div>
+            <div class="form-group user-info-input">
+                <label for="email">Email Address:</label><br>
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group user-info-input">
+                <label for="mobileNumber">Mobile Number:</label><br>
+                <input type="tel" class="form-control" id="mobileNumber" placeholder="eg.1234567890" maxlength="10"
+                    required>
+            </div>
+            <button type="button" class="btn btn-primary" id="confirmButton">Confirm Booking</button>
+        </div>
+    </div>
+</body>
+</html>
